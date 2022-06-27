@@ -1,7 +1,7 @@
 # Node.js PostgreSQL CRUD example with Express Rest APIs
 
 Full Article with implementation:
-> [Node.js PostgreSQL CRUD example with Express Rest APIs](https://bezkoder.com/node-express-sequelize-postgresql/)
+> [Node.js PostgreSQL CRUD example with Express Rest APIs](https://www.bezkoder.com/node-express-sequelize-postgresql/)
 
 We will build Rest Apis that can create, retrieve, update, delete and find Tutorials by title.
 
@@ -97,28 +97,41 @@ Now there are no rows in `tutorials` table:
 ```
 
 For more detail, please visit:
-> [Node.js PostgreSQL CRUD example with Express Rest APIs](https://bezkoder.com/node-express-sequelize-postgresql/)
+> [Node.js PostgreSQL CRUD example with Express Rest APIs](https://www.bezkoder.com/node-express-sequelize-postgresql/)
 
-> [Node.js Express Pagination with PostgreSQL example](https://bezkoder.com/node-js-pagination-postgresql/)
+> [Node.js Express Pagination with PostgreSQL example](https://www.bezkoder.com/node-js-pagination-postgresql/)
 
 Security:
-> [Node.js JWT Authentication & Authorization with PostgreSQL example](https://bezkoder.com/node-js-jwt-authentication-postgresql/)
+> [Node.js JWT Authentication & Authorization with PostgreSQL example](https://www.bezkoder.com/node-js-jwt-authentication-postgresql/)
 
 Associations:
-> [Sequelize Associations: One-to-Many Relationship example](https://bezkoder.com/sequelize-associate-one-to-many/)
+> [Sequelize Associations: One-to-Many Relationship example](https://www.bezkoder.com/sequelize-associate-one-to-many/)
 
-> [Sequelize Associations: Many-to-Many Relationship example](https://bezkoder.com/sequelize-associate-many-to-many/)
+> [Sequelize Associations: Many-to-Many Relationship example](https://www.bezkoder.com/sequelize-associate-many-to-many/)
 
 Fullstack:
-> [Vue + Node.js + Express + PostgreSQL example](https://bezkoder.com/vue-node-express-postgresql/)
+> [Vue + Node.js + Express + PostgreSQL example](https://www.bezkoder.com/vue-node-express-postgresql/)
 
-> [React + Node.js + Express + PostgreSQL example](https://bezkoder.com/react-node-express-postgresql/)
+> [React + Node.js + Express + PostgreSQL example](https://www.bezkoder.com/react-node-express-postgresql/)
 
-> [ANgular 8 + Node.js + Express + PostgreSQL example](https://bezkoder.com/angular-node-express-postgresql/)
+> [Angular 8 + Node.js + Express + PostgreSQL example](https://www.bezkoder.com/angular-node-express-postgresql/)
 
-> [ANgular 10 + Node.js + Express + PostgreSQL example](https://bezkoder.com/angular-10-node-express-postgresql/)
+> [Angular 10 + Node.js + Express + PostgreSQL example](https://www.bezkoder.com/angular-10-node-express-postgresql/)
 
-> [ANgular 11 + Node.js + Express + PostgreSQL example](https://bezkoder.com/angular-11-node-js-express-postgresql/)
+> [Angular 11 + Node.js + Express + PostgreSQL example](https://www.bezkoder.com/angular-11-node-js-express-postgresql/)
+
+> [Angular 12 + Node.js + Express + PostgreSQL example](https://www.bezkoder.com/angular-12-node-js-express-postgresql/)
+
+> [Angular 13 + Node.js + Express + PostgreSQL example](https://www.bezkoder.com/angular-13-node-js-express-postgresql/)
+
+> [Angular 14 + Node.js + Express + PostgreSQL example](https://www.bezkoder.com/angular-14-node-js-express-postgresql/)
+
+Integration (run back-end & front-end on same server/port):
+> [Integrate React with Node.js Restful Services](https://www.bezkoder.com/integrate-react-express-same-server-port/)
+
+> [Integrate Angular with Node.js Restful Services](https://www.bezkoder.com/integrate-angular-12-node-js/)
+
+> [Integrate Vue with Node.js Restful Services](https://www.bezkoder.com/serve-vue-app-express/)
 
 ## Project setup
 ```
