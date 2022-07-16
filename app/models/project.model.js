@@ -23,8 +23,15 @@ module.exports = (sequelize, Sequelize) => {
         }
     });
     Project.associate = (db) => {
-      Project.hasMany(db.sandboxs, {
-          foreignKey: "projectId"
+      Project.hasMany(db.sandboxes, {
+          foreignKey: "projectId",
+          as: 'sandboxes',
+          onDelete: 'CASCADE'
+      }),
+      Project.hasMany(db.billings, {
+          foreignKey: "projectId",
+          as: 'billings',
+          onDelete: 'CASCADE'
       })
   };
     return Project;

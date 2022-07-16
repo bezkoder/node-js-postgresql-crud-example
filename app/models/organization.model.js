@@ -54,19 +54,15 @@ module.exports = (sequelize, Sequelize) => {
     });
     Organization.associate = (db) => {
         Organization.hasMany(db.projects, {
-            foreignKey: "organizationId"
+            foreignKey: "organizationId",
+            as: 'projects',
+            onDelete: 'CASCADE'
         })
-    };
-    
-    Organization.associate = (db) => {
-        Organization.hasMany(db.billings, {
-            foreignKey: "organizationId"
-        })
-    };
-    
-    Organization.associate = (db) => {
-        Organization.hasMany(db.members, {
-            foreignKey: "organizationId"
+        Organization.belongsToMany(db.users, {
+            through: "user_organizations",
+            as: 'users',
+            foreignKey: "organizationId",
+            onDelete: 'CASCADE'
         })
     };
 

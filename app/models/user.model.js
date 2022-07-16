@@ -2,8 +2,11 @@ module.exports = (sequelize, Sequelize) => {
   const User = sequelize.define("users", {
     id: {
       type: Sequelize.UUID,
-      defaultValue: Sequelize.literal( 'uuid_generate_v4()' ),
+      defaultValue: Sequelize.literal('uuid_generate_v4()'),
       primaryKey: true,
+    },
+    avatar: {
+      type: Sequelize.STRING
     },
     firstName: {
       type: Sequelize.STRING
@@ -20,6 +23,9 @@ module.exports = (sequelize, Sequelize) => {
     phoneNumber: {
       type: Sequelize.INTEGER
     },
+    memberType: {
+      type: Sequelize.STRING,
+    },
     createdAt: {
       allowNull: false,
       type: Sequelize.DATE,
@@ -32,16 +38,19 @@ module.exports = (sequelize, Sequelize) => {
     }
   });
   User.associate = (db) => {
-    User.hasMany(db.organizations, {
-      foreignKey: "userId"
-    })
-  };
-  User.associate = (db) => {
     User.belongsToMany(db.roles, {
       through: "user_roles",
-      foreignKey: "userId"
+      foreignKey: "userId",
+      as: 'roles',
+      onDelete: 'CASCADE'
     })
-  }
+    User.belongsToMany(db.organizations, {
+      through: "user_organizations",
+      foreignKey: "userId",
+      as: 'organizations',
+      onDelete: 'CASCADE'
+    })
+  };
 
   return User;
 };

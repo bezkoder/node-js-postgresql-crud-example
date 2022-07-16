@@ -34,5 +34,5 @@ module.exports = (sequelize, Sequelize) => {
           defaultValue: new Date(),
         }
     });
-    return Project;
+    return Sandbox;
 };
